@@ -1,0 +1,30 @@
+{
+  "sources": [
+    "Main.cpp",
+    "core/Config.cpp",
+    "core/Display.cpp",
+    "core/Plugin.cpp",
+    "game/Camera.cpp",
+    "game/FrameCopy.cpp",
+    "game/Hud.cpp",
+    "game/Intro.cpp",
+    "../../external/injector/include/ps2/rini.c",
+    "../../external/injector/include/ps2/inireader.c"
+  ],
+  "includes": [
+    ".",
+    "../../external/injector/include"
+  ],
+  "cxx_flags": [
+    "-std=gnu++17",
+    "-fno-exceptions",
+    "-fno-rtti",
+    "-fno-strict-aliasing",
+    "-fno-threadsafe-statics",
+    "-ffp-contract=off"
+  ],
+  "c_flags": [
+    "-ffp-contract=off"
+  ],
+  "output": "../../output/plugins/PCSX2F-TTT-WidescreenFix.elf"
+}
